@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="@color/primary_light">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KUSRC Wallet"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_dark"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ยอดเงินคงเหลือ"
+                        android:textSize="16sp"
+                        android:textColor="@color/secondary_text"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/balanceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="32sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/success"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="เลือกวิธีการเติมเงิน"
+                android:textSize="18sp"
+                android:textColor="@color/primary_text"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/scbButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SCB EASY"
+                android:layout_marginBottom="8dp"
+                app:icon="@drawable/ic_bank"
+                app:iconGravity="start"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/promptpayButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="THAI QR PAYMENT"
+                android:layout_marginBottom="24dp"
+                app:icon="@drawable/ic_qr_code"
+                app:iconGravity="start"/>
+
+            <TextView
+                android:id="@+id/accountNumberText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_border_background"/>
+
+            <!-- QR Code -->
+            <LinearLayout
+                android:id="@+id/qrCodeImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_border_background"
+                android:gravity="center"
+                android:padding="16dp"
+                android:visibility="gone">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="THAI QR PAYMENT"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="8dp"/>
+                    
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="พร้อมเพย์"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/primary_text"
+                    android:layout_marginBottom="16dp"/>
+                    
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:src="@drawable/qrcode"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/white"
+                    android:padding="8dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="จำนวนเงิน"
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amountInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/uploadSlipButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="อัพโหลดสลิป"
+                android:layout_marginBottom="16dp"
+                app:icon="@drawable/ic_upload"
+                app:iconGravity="start"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ยืนยันการเติมเงิน"
+                android:visibility="gone"
+                app:icon="@drawable/ic_check"
+                app:iconGravity="start"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout> 

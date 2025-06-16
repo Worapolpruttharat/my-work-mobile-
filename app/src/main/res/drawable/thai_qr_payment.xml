@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="800dp"
+    android:height="800dp"
+    android:viewportWidth="800"
+    android:viewportHeight="800">
+
+    <!-- QR Code Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h800v800h-800z"/>
+
+    <!-- Main QR Code Pattern -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M100,100h50v50h-50z
+                         M150,100h50v50h-50z
+                         M200,100h50v50h-50z
+                         M250,100h50v50h-50z
+                         M300,100h50v50h-50z
+                         M350,100h50v50h-50z
+                         M400,100h50v50h-50z
+                         M550,100h50v50h-50z
+                         M650,100h50v50h-50z
+
+                         M100,150h50v50h-50z
+                         M400,150h50v50h-50z
+                         M550,150h50v50h-50z
+                         M650,150h50v50h-50z
+                         
+                         M100,200h50v50h-50z
+                         M200,200h50v50h-50z
+                         M250,200h50v50h-50z
+                         M300,200h50v50h-50z
+                         M400,200h50v50h-50z
+                         M550,200h50v50h-50z
+                         M650,200h50v50h-50z
+                         
+                         M100,250h50v50h-50z
+                         M200,250h50v50h-50z
+                         M250,250h50v50h-50z
+                         M300,250h50v50h-50z
+                         M400,250h50v50h-50z
+                         M500,250h50v50h-50z
+                         M650,250h50v50h-50z
+                         
+                         M100,300h50v50h-50z
+                         M200,300h50v50h-50z
+                         M250,300h50v50h-50z
+                         M300,300h50v50h-50z
+                         M400,300h50v50h-50z
+                         M650,300h50v50h-50z
+                         
+                         M100,350h50v50h-50z
+                         M400,350h50v50h-50z
+                         M500,350h50v50h-50z
+                         M550,350h50v50h-50z
+                         M650,350h50v50h-50z
+                         
+                         M100,400h50v50h-50z
+                         M150,400h50v50h-50z
+                         M200,400h50v50h-50z
+                         M250,400h50v50h-50z
+                         M300,400h50v50h-50z
+                         M350,400h50v50h-50z
+                         M400,400h50v50h-50z
+                         M500,400h50v50h-50z
+                         M600,400h50v50h-50z
+                         M650,400h50v50h-50z
+                         
+                         M200,450h50v50h-50z
+                         M300,450h50v50h-50z
+                         M550,450h50v50h-50z
+                         
+                         M100,500h50v50h-50z
+                         M150,500h50v50h-50z
+                         M250,500h50v50h-50z
+                         M300,500h50v50h-50z
+                         M350,500h50v50h-50z
+                         M450,500h50v50h-50z
+                         M550,500h50v50h-50z
+                         M650,500h50v50h-50z
+                         
+                         M250,550h50v50h-50z
+                         M400,550h50v50h-50z
+                         M550,550h50v50h-50z
+                         M600,550h50v50h-50z
+                         M650,550h50v50h-50z
+                         
+                         M100,600h50v50h-50z
+                         M150,600h50v50h-50z
+                         M200,600h50v50h-50z
+                         M250,600h50v50h-50z
+                         M300,600h50v50h-50z
+                         M350,600h50v50h-50z
+                         M450,600h50v50h-50z
+                         M550,600h50v50h-50z
+                         
+                         M100,650h50v50h-50z
+                         M350,650h50v50h-50z
+                         M450,650h50v50h-50z
+                         M500,650h50v50h-50z
+                         M600,650h50v50h-50z" />
+
+    <!-- Thai QR Payment Logo (simplified) -->
+    <path
+        android:fillColor="#004B87"
+        android:pathData="M370,370h60v60h-60z"/>
+        
+    <path
+        android:fillColor="#00A19A"
+        android:pathData="M430,430l-60,-60l60,0z"/>
+</vector> 
